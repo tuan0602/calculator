@@ -1,0 +1,107 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 24px 12px;
+    color: white;
+}
+
+/* Container Máy tính */
+.calculator {
+    background: #1e1e1e;
+    border-radius: 12px;
+    width: 320px;
+    max-width: 100%;
+    padding: 20px 16px 24px;
+    box-shadow: 0 0 8px rgba(255 165 0 / 0.7);
+    border: 2px solid #444;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+.calculator-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+/* Màn hình hiển thị */
+.display {
+    background: transparent;
+    border: 1.5px solid orange;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 1.3rem;
+    text-align: right;
+    color: white;
+    min-height: 48px;
+}
+
+/* Bảng nút */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Nút mặc định */
+button {
+    border: none;
+    border-radius: 50%;
+    background-color: #666666;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 18px 0;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
+
+button:hover, button:focus-visible {
+    background-color: #888888;
+    outline: none;
+}
+
+.btn-num, .btn-dot, .btn-toggle-sign {
+    background-color: #666666;
+}
+.btn-num:hover, .btn-dot:hover, .btn-toggle-sign:hover {
+    background-color: #888888;
+}
+
+.btn-operator {
+    background-color: #f28c00;
+    color: white;
+}
+.btn-operator:hover, .btn-operator:focus-visible {
+    background-color: #db7d00;
+}
+
+/* Các nút đặc biệt */
+.btn-special {
+    background-color: #777777;
+    font-weight: 700;
+}
+.btn-special:hover, .btn-special:focus-visible {
+    background-color: #999999;
+}
+
+/* Nút Backspace */
+.btn-backspace {
+    background-color: #777777;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Máy tính toán Responsive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="calculator" role="region" aria-label="">
+      <div class="calculator-title" >Calculator</div>
+      <div class="display" id="display" >0</div>
+
+      <div class="buttons-grid" role="group" aria-label="">
+        <button class="btn-special" aria-label="Phần trăm">%</button>
+        <button class="btn-special" aria-label="Clear Entry CE">CE</button>
+        <button class="btn-special" aria-label="Clear C">C</button>
+        <button class="btn-backspace btn-special" aria-label=""><span class="material-icons">backspace</span></button>
+
+        <button class="btn-special" aria-label="1 trên x">¹/x</button>
+        <button class="btn-special" aria-label="Bình phương x²">x²</button>
+        <button class="btn-special" aria-label="Căn bậc hai √x">√x</button>
+        <button class="btn-operator" aria-label="Cộng">+</button>
+
+        <button class="btn-num" aria-label="Số 7">7</button>
+        <button class="btn-num" aria-label="Số 8">8</button>
+        <button class="btn-num" aria-label="Số 9">9</button>
+        <button class="btn-operator" aria-label="Trừ">-</button>
+
+        <button class="btn-num" aria-label="Số 4">4</button>
+        <button class="btn-num" aria-label="Số 5">5</button>
+        <button class="btn-num" aria-label="Số 6">6</button>
+        <button class="btn-operator" aria-label="Nhân">x</button>
+
+        <button class="btn-num" aria-label="Số 1">1</button>
+        <button class="btn-num" aria-label="Số 2">2</button>
+        <button class="btn-num" aria-label="Số 3">3</button>
+        <button class="btn-operator" aria-label="Chia">÷</button>
+
+        <button class="btn-toggle-sign" aria-label="Đổi dấu">±</button>
+        <button class="btn-num" aria-label="Số 0">0</button>
+        <button class="btn-dot" aria-label="Dấu chấm">.</button>
+        <button class="btn-operator" aria-label="Bằng">=</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
